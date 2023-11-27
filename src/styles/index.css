@@ -8,5 +8,4 @@
 @import './typographies/fontSizes.css';
 
 /* utilities */
-@import './utilities/devices.css';
 @import './utilities/spaces.css'

@@ -1,32 +1,32 @@
 @font-face {
-  font-family: 'netflix sans light';
+  font-family: netflix sans light;
   src: url('../../fonts/NetflixSans-Light.otf');
 }
 
 
 @font-face {
-  font-family: 'netflix sans Medium';
+  font-family: netflix sans Medium;
   src: url('../../fonts/NetflixSans-Medium.otf');
 }
 
 @font-face {
-  font-family: 'netflix sans regular';
+  font-family: netflix sans regular;
   src: url('../../fonts/NetflixSans-Regular.otf');
 }
 
 
 @font-face {
-  font-family: 'netflix sans bold';
+  font-family: netflix sans bold;
   src: url('../../fonts/NetflixSans-Bold.otf');
 }
 
 :root {
-  --font-bold: NetflixSans-Bold;
-  --font-medium: NetflixSans-Medium;
-  --font-regular: NetflixSans-Regular;
-  --font-light: NetflixSans-Light;
+  --fontFamily-bold: "netflix Sans Bold";
+  --fontFamily-medium: "Netflix Sans Medium";
+  --fontFamily-regular: "Netflix Sans Regular";
+  --fontFamily-light: "Netflix Sans Light";
 }
 
 body {
-  font-family: var(--font-regular);
+  font-family: var(--fontFamily-regular);
 }

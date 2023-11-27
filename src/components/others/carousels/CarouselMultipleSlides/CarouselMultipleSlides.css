@@ -1,0 +1,8 @@
+.CarouselMultipleSlides {
+  width: 100%;
+  .swiper-wrapper {
+    .swiper-slide {
+      height: 120px;
+    }
+  }
+}

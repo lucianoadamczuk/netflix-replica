@@ -1,6 +1,14 @@
 :root {
-  --fontSize-big: 4rem;
+  --fontSize-big: 6rem;
   --fontSize-medium: 2rem;
   --fontSize-regular: 1.6rem;
   --fontSize-small: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--fontSize-regular);
 }
