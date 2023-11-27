@@ -1,0 +1,12 @@
+:root {
+  --spacel-small: 10px;
+  --space-regular: 20px;
+  --space-big: 60px;
+  --space-container: 5%;
+}
+
+@media (width > var(--device-desktop)){
+  :root{
+    --spaceContainer: 10%;
+  }
+}

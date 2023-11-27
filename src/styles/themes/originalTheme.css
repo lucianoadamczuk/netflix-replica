@@ -1,0 +1,13 @@
+:root {
+  --color-dark: #141414;
+  --color-muted: #595959;
+  --color-light: #ffffff;
+  --color-success: #669C13;
+  --color-warning: #F2CB05;
+  --color--primary: #e30913;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
