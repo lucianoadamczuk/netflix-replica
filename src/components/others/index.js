@@ -1,0 +1,1 @@
+export { CarouselHeader } from './carousels/CarouselHeader/CarouselHeader'

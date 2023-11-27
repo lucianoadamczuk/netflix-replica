@@ -1,10 +1,10 @@
-import './App.css'
+import { CarouselHeader } from './components/others/carousels/CarouselHeader/CarouselHeader'
 
 function App() {
 
   return (
     <>
-
+      <CarouselHeader/>
     </>
   )
 }
