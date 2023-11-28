@@ -1,0 +1,16 @@
+.Page404 {
+  height: 100vh;
+  padding: 0 var(--space-container);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    > .textContainer {
+      text-align: center;
+      > .title {
+        font-size: var(--fontSize-big);
+        font-family: var(--fontFamily-bold);
+      }
+    }
+}

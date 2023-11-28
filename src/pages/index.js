@@ -1,0 +1,5 @@
+export { PageHome } from './PageHome/PageHome'
+export { PageMovies } from './PageMovies/PageMovies'
+export { PageSeries } from './PageSeries/PageSeries'
+export { PageDetails } from './PageDetails/PageDetails'
+export { Page404 } from './Page404/Page404'
