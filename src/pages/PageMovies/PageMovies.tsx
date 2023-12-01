@@ -14,17 +14,18 @@ export default function PageMovies (): React.ReactNode {
   useEffect(() => {
     function detectScroll (): void {
       const { scrollHeight, clientHeight, scrollTop } = document.documentElement
-      if (scrollHeight - clientHeight === scrollTop) {
+      console.log(scrollHeight, 'scroll height')
+      console.log(clientHeight, 'client height')
+      console.log(scrollTop, 'scrolltop')
+      if (scrollHeight - clientHeight - scrollTop < 200) {
         setSliceValue(prevState => prevState + 2)
       }
     }
     detectScroll()
     window.addEventListener('scroll', detectScroll)
-    window.addEventListener('touchmove', detectScroll)
 
     return () => {
       window.removeEventListener('scroll', detectScroll)
-      window.removeEventListener('touchmove', detectScroll)
     }
   }, [])
   // End: Scroll detecter
