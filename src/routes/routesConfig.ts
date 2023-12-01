@@ -2,5 +2,7 @@ export const routesConfig = {
   home: { path: '/', name: 'home' },
   movies: { path: 'movies', name: 'Movies' },
   series: { path: 'series', name: 'Series' },
-  details: { path: 'details' }
+  movieDetails: { path: '/movie/details/:id', name: '/movie/details/' },
+  serieDetails: { path: '/serie/details/:id', name: '/serie/details/' },
+  search: { path: '/search' }
 }

@@ -1,0 +1,27 @@
+.Button {
+  width: 100%;
+  padding: var(--space-small);
+  background-color: var(--color-light-opacity);
+  font-family: var(--fontFamily-bold);
+  color: var(--color-light);
+  border-radius: 5px;
+  border: 0px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.Button:hover{
+  opacity: 1;
+}
+
+.ButtonSecondary {
+  background-color: var(--color-muted-opacity);
+  color: var(--color-light);
+}
+
+@media (width > 600px) {
+  .Button {
+    width: fit-content;
+    padding: var(--space-small) var(--space-big);
+  }
+}

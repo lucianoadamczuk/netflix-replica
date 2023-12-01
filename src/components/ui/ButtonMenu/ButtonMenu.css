@@ -1,0 +1,27 @@
+.ButtonMenu {
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+    > .bar {
+      width: 30px;
+      height: 2px;
+      background-color: var(--color-light);
+      transition: 0.3s ease;
+    }
+}
+
+.ButtonMenuAnimation {
+  > .bar-1 {
+    transform-origin: right bottom;
+    transform:  translateY(-1px) rotate(-30deg);
+  }
+  > .bar-2 {
+    opacity: 0;
+  }
+  > .bar-3 {
+    transform-origin: right bottom;
+    transform: translateY(0px) rotate(30deg);
+  }
+}

@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: var(--space-regular);
 
     > .textContainer {
       text-align: center;

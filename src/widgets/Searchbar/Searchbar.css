@@ -1,0 +1,27 @@
+.Searchbar {
+  padding: 0 var(--space-small);
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+  background-color: var(--color-muted-opacity);
+
+  & > svg {
+    cursor: pointer;
+  }
+
+  & > svg:hover {
+    transform: scale(120%);
+  }
+
+    & > input {
+      height: 25px;
+      background-color: transparent;
+      border: 0px;
+      color: var(--color-light);
+    }
+
+    & > input::placeholder{
+      color: var(--color-light);
+      opacity: 60%;
+    }
+}

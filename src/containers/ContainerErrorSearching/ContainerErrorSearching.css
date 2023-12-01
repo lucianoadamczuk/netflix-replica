@@ -1,0 +1,30 @@
+.ContainerErrorSearching {
+  width: 100%;
+  height: calc(100vh - var(--space-big));
+  display: flex; 
+  flex-direction: 
+  column; justify-content: 
+  center; align-items: 
+  center;
+  
+    > .textContainer{
+      width: 300px;
+      text-align: start;
+      white-space: wrap;
+      text-overflow: clip;
+      overflow: hidden;
+      
+        & > h3{
+          font-family: var(--fontFamily-bold);
+          font-size: var(--fontSize-medium);
+        }
+
+        & > h5{
+          margin: var(--space-regular) 0 var(--space-small) 0;
+        }
+
+        & > ul{
+          padding-left: 20px;
+        }
+    }
+}

@@ -1,10 +1,12 @@
 :root {
   --color-dark: #141414;
   --color-muted: #595959;
+  --color-muted-opacity: #59595988;
   --color-light: #ffffff;
+  --color-light-opacity: #ffffff85;
   --color-success: #669C13;
   --color-warning: #F2CB05;
-  --color--primary: #e30913;
+  --color-primary: #e30913;
 }
 
 body {

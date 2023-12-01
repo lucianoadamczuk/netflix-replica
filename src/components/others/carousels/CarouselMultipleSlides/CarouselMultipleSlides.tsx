@@ -7,8 +7,16 @@ import 'swiper/css'
 
 import './CarouselMultipleSlides.css'
 import { SlideMedia } from '../../slides/SlideMedia/SlideMedia'
+import { type InterfaceMedia } from '../../../../interfaces'
+import { Link } from 'react-router-dom'
+import { routesConfig } from '../../../../routes/routesConfig'
 
-export const CarouselMultipleSlides: React.FC = () => {
+interface CarouselProps {
+  areMovies: boolean
+  dataToShow: InterfaceMedia[]
+}
+
+export const CarouselMultipleSlides: React.FC<CarouselProps> = ({ areMovies, dataToShow }) => {
   return (
     <>
       <Swiper
@@ -23,31 +31,27 @@ export const CarouselMultipleSlides: React.FC = () => {
           },
           1024: {
             slidesPerView: 5.3
+          },
+          1500: {
+            slidesPerView: 6.3
           }
         }}
         className="CarouselMultipleSlides"
       >
-        <SwiperSlide>
-          <SlideMedia
-            isFull={false}
-            title='movie or serie title'
-            description='movie or serie description'
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SlideMedia
-            isFull={false}
-            title='movie or serie title'
-            description='movie or serie description'
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SlideMedia
-            isFull={false}
-            title='movie or serie title'
-            description='movie or serie description'
-          />
-        </SwiperSlide>
+        {
+          dataToShow?.map(item => (
+            <SwiperSlide key={item.id}>
+              <Link to={areMovies ? routesConfig.movieDetails.name + item.id : routesConfig.serieDetails.name + item.id}>
+                <SlideMedia
+                  isFull={false}
+                  title={item?.title ?? item?.name ?? 'unknown'}
+                  description={item?.overview}
+                  image={item.backdrop_path}
+                />
+              </Link>
+            </SwiperSlide>
+          ))
+        }
       </Swiper>
     </>
   )

@@ -1,0 +1,19 @@
+.ContainerError {
+  width: 100%;
+  height: 100vh;
+  padding: var(--space-container);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-big);
+
+    > .textContainer {
+      > .title {
+        font-family: var(--fondFamily-bold);
+        margin-bottom: var(--space-small);
+        color: var(--color--primary);
+        font-size: var(--fontSize-medium);
+      }
+    }
+
+}

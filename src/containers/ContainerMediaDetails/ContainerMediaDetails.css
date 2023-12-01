@@ -1,4 +1,4 @@
-.PageDetails {
+.ContainerMediaDetails {
 
   > .header {
     height: 85vh;
@@ -51,6 +51,47 @@
         color: var(--color-muted);
 
       }
+    }
+  }
+
+  @media (width > 800px) {
+    > .content {
+      display: grid;
+      grid-template-columns: 50% 25% 25%;
+      grid-template-areas: 
+      "voteAverage voteAverage voteAverage"
+      "mainContent runTime releaseDate"
+      "mainContent genres companies"
+      "mainContent languages languages";
+
+        > .voteAverage {
+          grid-area: voteAverage;
+          place-items: end center;
+        }
+
+        > .mainContent {
+          grid-area: mainContent;
+        }
+
+        > .genres {
+          grid-area: genres;
+        }
+
+        > .releaseDate {
+          grid-area: releaseDate;
+        }
+
+        > .runTime {
+          grid-area: runTime;
+        }
+
+        > .companies {
+          grid-area: companies;
+        }
+
+        > .languages {
+          grid-area: languages;
+        }
     }
   }
 }

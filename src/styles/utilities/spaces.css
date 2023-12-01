@@ -5,8 +5,14 @@
   --space-container: 5%;
 }
 
-@media (width > var(--device-desktop)){
+@media (width > 800px){
   :root{
-    --spaceContainer: 10%;
+    --space-container: 10%;
+  }
+}
+
+@media (width > 1500px) {
+  :root {
+    --space-container: 15%;
   }
 }
