@@ -8,7 +8,7 @@ import './SlideMedia.css'
 interface SlideMediaProps {
   isFull: boolean
   navigate: string
-  onClick: () => void
+  onClick?: () => void
   title: string
   description?: string
   image: string
