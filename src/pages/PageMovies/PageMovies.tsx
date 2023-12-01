@@ -20,9 +20,11 @@ export default function PageMovies (): React.ReactNode {
     }
     detectScroll()
     window.addEventListener('scroll', detectScroll)
+    window.addEventListener('touchmove', detectScroll)
 
     return () => {
       window.removeEventListener('scroll', detectScroll)
+      window.removeEventListener('touchmove', detectScroll)
     }
   }, [])
   // End: Scroll detecter
