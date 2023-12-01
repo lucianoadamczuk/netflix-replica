@@ -22,10 +22,10 @@ export default function PageSearch (): React.ReactNode {
   useEffect(() => {
     function detectScroll (): void {
       const { scrollHeight, clientHeight, scrollTop } = document.documentElement
-      if (scrollHeight - clientHeight === scrollTop && moviesData?.results?.length < moviesData?.total_results) {
+      if (scrollHeight - clientHeight - scrollTop < 200 && moviesData?.results?.length < moviesData?.total_results) {
         setMoviesPagination(prevState => prevState + 1)
       }
-      if (scrollHeight - clientHeight === scrollTop && seriesData?.results?.length < seriesData?.total_results) {
+      if (scrollHeight - clientHeight - scrollTop < 200 && seriesData?.results?.length < seriesData?.total_results) {
         setSeriesPagination(prevState => prevState + 1)
       }
     }

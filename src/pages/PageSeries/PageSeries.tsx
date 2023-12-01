@@ -13,7 +13,7 @@ export default function PageSeries (): React.ReactNode {
   useEffect(() => {
     function detectScroll (): void {
       const { scrollHeight, clientHeight, scrollTop } = document.documentElement
-      if (scrollHeight - clientHeight === scrollTop) {
+      if (scrollHeight - clientHeight - scrollTop < 200) {
         setSliceValue(prevState => prevState + 2)
       }
     }
