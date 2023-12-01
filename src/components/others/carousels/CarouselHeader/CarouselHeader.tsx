@@ -44,7 +44,7 @@ export const CarouselHeader: React.FC<CarouselProps> = ({ areMovies, dataToShow 
         className="CarouselHeader"
       >
         {
-          dataToShow?.map(item => (
+          dataToShow.slice(0, 10)?.map(item => (
             <SwiperSlide key={item?.id}>
               <SlideMedia
                 isFull={true}
