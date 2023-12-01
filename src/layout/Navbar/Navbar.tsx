@@ -35,7 +35,7 @@ export const Navbar: React.FC = () => {
   return (
     <nav className={`${isMenuOpen && isMobile ? 'navBackground' : ''} ${!isMobile && isScrolled ? 'navBackground' : ''} `} >
       <img src={IMAGE_URL + '/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg'} alt="Netflix logo" />
-      <div className={`linksContainer ${isMenuOpen ? 'linksContainerOpen' : ''} `} >
+      <div className={`linksContainer ${isMobile && isMenuOpen ? 'linksContainerOpen' : ''} `} >
         {
           routeElements.map((item, index) =>
             <NavLink
