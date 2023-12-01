@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
             <NavLink
               to={item.path}
               key={index}
-              onClick={() => { setIsMenuOpen(false) } }
+              onClick={() => { setIsMenuOpen(!isMenuOpen) } }
             >
               {item.name}
             </NavLink>

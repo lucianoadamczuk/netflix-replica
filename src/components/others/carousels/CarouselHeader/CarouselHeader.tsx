@@ -16,6 +16,7 @@ import { useWidthDetector } from '../../../../hooks/useWidthDetector'
 import { routesConfig } from '../../../../routes/routesConfig'
 import { ContextMovieTrailerModal } from '../../../../contexts/ContextMovieTrailerModal'
 import { ContextSerieTrailerModal } from '../../../../contexts/ContextSerieTrailerModal'
+import { useNavigate } from 'react-router-dom'
 
 interface CarouselProps {
   areMovies: boolean
@@ -26,7 +27,9 @@ export const CarouselHeader: React.FC<CarouselProps> = ({ areMovies, dataToShow 
   const { isMobile } = useWidthDetector()
   const { setIsMovieTrailerModalOpen, setVideoID: setVideoMovieID } = useContext(ContextMovieTrailerModal)
   const { setIsSerieTrailerModalOpen, setVideoID: setVideoSerieID } = useContext(ContextSerieTrailerModal)
-  const navigate = areMovies ? routesConfig.movieDetails.name : routesConfig.serieDetails.name
+
+  const navigate = useNavigate()
+
   return (
     <>
       <Swiper
@@ -44,15 +47,21 @@ export const CarouselHeader: React.FC<CarouselProps> = ({ areMovies, dataToShow 
           dataToShow?.map(item => (
             <SwiperSlide key={item?.id}>
               <SlideMedia
-                navigate={`${navigate}${item?.id}`}
                 isFull={true}
-                onClick={() => {
+                onClickWatchTrailer={() => {
                   if (areMovies) {
                     setIsMovieTrailerModalOpen(true)
                     setVideoMovieID(item?.id)
                   } else {
                     setIsSerieTrailerModalOpen(true)
                     setVideoSerieID(item?.id)
+                  }
+                }}
+                onClickMoreInformation={() => {
+                  if (areMovies) {
+                    navigate(routesConfig.movieDetails.name + item.id)
+                  } else {
+                    navigate(routesConfig.serieDetails.name + item.id)
                   }
                 }}
                 title={item?.title ?? item?.name ?? 'unknown'}

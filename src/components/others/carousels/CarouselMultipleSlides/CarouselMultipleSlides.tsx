@@ -43,7 +43,6 @@ export const CarouselMultipleSlides: React.FC<CarouselProps> = ({ areMovies, dat
             <SwiperSlide key={item.id}>
               <Link to={areMovies ? routesConfig.movieDetails.name + item.id : routesConfig.serieDetails.name + item.id}>
                 <SlideMedia
-                  navigate=''
                   isFull={false}
                   title={item?.title ?? item?.name ?? 'unknown'}
                   description={item?.overview}
