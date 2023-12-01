@@ -17,8 +17,8 @@ export const MovieTrailerModal: React.FC = () => {
 
         <div className="button" onClick={() => { setIsMovieTrailerModalOpen(false) }} > X </div>
 
-        <iframe
-          src={movieVideoURL}
+        <iframe id='algo'
+          src={isMovieTrailerModalOpen ? movieVideoURL : undefined}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen
         ></iframe>
