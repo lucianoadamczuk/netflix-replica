@@ -15,7 +15,15 @@ interface Props {
   children: ReactNode;
 }
 
-export default function CarouselHeader({ children }: Props) {
+/**
+ * @description
+ * Carousel to display data.
+ * You can map an array as a children and, for each element, create a SwiperSlide with a slide inside.
+ *
+ * @returns {ReactNode}
+ */
+
+export default function CarouselHeader({ children }: Props): ReactNode {
   return (
     <>
       <Swiper

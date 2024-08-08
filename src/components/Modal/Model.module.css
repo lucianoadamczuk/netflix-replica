@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-transparent);
+  backdrop-filter: blur(10px);
+  z-index: 9999999;
+}
+
+.iconContainer {
+  width: 30px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: var(--space-big);
+  right: var(--space-big);
+}
+
+.iconContainer > svg {
+  width: 100%;
+  height: 100%;
+  color: var(--color-light-soft);
+  cursor: pointer;
+}
+
+.iconContainer > svg:hover {
+  color: var(--color-light);
+}
