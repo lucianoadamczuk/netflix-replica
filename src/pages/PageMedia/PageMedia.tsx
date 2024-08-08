@@ -1,3 +1,4 @@
+import { CarouselResponsive } from "../../components";
 import { CarouselHeader } from "./components";
 import styles from "./PageMedia.module.css";
 export default function PageMedia() {
@@ -6,7 +7,9 @@ export default function PageMedia() {
       <header className={styles.header}>
         <CarouselHeader />
       </header>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <CarouselResponsive />
+      </main>
     </>
   );
 }
