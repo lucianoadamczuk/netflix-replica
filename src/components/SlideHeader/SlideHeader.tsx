@@ -1,6 +1,7 @@
-import { Button, Spinner } from "../../../../components";
-import { VIEWPORT } from "../../../../constants";
-import { ButtonsLayout } from "../../../../layouts";
+import { VIEWPORT } from "../../constants";
+import { ButtonsLayout } from "../../layouts";
+import Button from "../Button/Button";
+import Spinner from "../Spinner/Spinner";
 import styles from "./SlideHeader.module.css";
 
 // TODO:

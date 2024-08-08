@@ -1,2 +1,12 @@
 export { default as PageDetails } from "./PageDetails/PageDetails";
-export { default as PageMedia } from "./PageMedia/PageMedia";
+export { default as Header } from "./PageDetails/sections/Header/Header";
+export { default as MainDetails } from "./PageDetails/sections/MainDetails/MainDetails";
+export { default as Related } from "./PageDetails/sections/Related/Related";
+export { default as Seasons } from "./PageDetails/sections/Seasons/Seasons";
+export { default as SlideSeason } from "./PageDetails/sections/Seasons/components/SlideSeason/SlideSeason";
+export * from "./PageDetails/sections/Seasons/components";
+export { default as Trailers } from "./PageDetails/sections/Trailers/Trailers";
+export { default as SlideTrailer } from "./PageDetails/sections/Trailers/components/SlideTrailer/SlideTrailer";
+export * from "./PageDetails/sections/Trailers/components";
+export * from "./PageDetails/sections";
+export { default as PageMovies } from "./PageMovies/PageMovies";

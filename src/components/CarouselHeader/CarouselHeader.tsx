@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import { EffectFade, Navigation } from "swiper/modules";
 
 import { ReactNode } from "react";
 import styles from "./CarouselHeader.module.css";
@@ -33,7 +33,7 @@ export default function CarouselHeader({ children }: Props): ReactNode {
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade, Navigation, Pagination]}
+        modules={[EffectFade, Navigation]}
         className={styles.carousel}
       >
         {children}
