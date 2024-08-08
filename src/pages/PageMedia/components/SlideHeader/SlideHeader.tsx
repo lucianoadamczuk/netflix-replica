@@ -2,13 +2,15 @@ import { VIEWPORT } from "../../../../constants";
 import styles from "./SlideHeader.module.css";
 
 // TODO:
-// Replace the alt
-// replace the title
 // Add props
+// Replace alt
+// Replace title
+// Replace text
 
 export default function SlideHeader() {
   return (
     <article className={styles.slide}>
+      {/* images */}
       <picture className={styles.image}>
         <source
           media={`(min-width: ${VIEWPORT.XL})`}
@@ -28,7 +30,17 @@ export default function SlideHeader() {
           className={styles.image}
         />
       </picture>
-      <h5 className={styles.title}>Movie or serie title</h5>
+
+      {/* content */}
+      <div className={styles.container}>
+        <h3 className={styles.title}>Movie or serie title</h3>
+        <p className={styles.paragraph}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          voluptas id labore quaerat omnis quae itaque cupiditate maxime
+          voluptatum facilis obcaecati voluptatibus, dicta maiores, laborum,
+          alias tenetur dolorem ratione molestiae.
+        </p>
+      </div>
     </article>
   );
 }
