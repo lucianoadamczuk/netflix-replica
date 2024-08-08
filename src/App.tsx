@@ -1,13 +1,7 @@
-import { PageDetails } from "./pages";
-import PageMedia from "./pages/PageMedia/PageMedia";
+import { AppRoutes } from "./routes";
 
 function App() {
-  return (
-    <>
-      <PageMedia />
-      <PageDetails />
-    </>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
