@@ -9,3 +9,7 @@
 body {
   min-height: 100dvh;
 }
+
+button {
+  border: 0px;
+}

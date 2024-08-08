@@ -1,3 +1,4 @@
+import { Button } from "../../../../components";
 import { VIEWPORT } from "../../../../constants";
 import styles from "./SlideHeader.module.css";
 
@@ -40,6 +41,9 @@ export default function SlideHeader() {
           voluptatum facilis obcaecati voluptatibus, dicta maiores, laborum,
           alias tenetur dolorem ratione molestiae.
         </p>
+
+        <Button />
+        <Button secondary />
       </div>
     </article>
   );
