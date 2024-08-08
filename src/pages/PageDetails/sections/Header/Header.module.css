@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: end;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  mask-image: linear-gradient(to bottom, var(--color-dark), transparent);
+}
+
+.container {
+  padding: var(--space-normal) var(--container);
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
