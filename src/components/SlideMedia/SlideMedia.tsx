@@ -20,7 +20,7 @@ export default function SlideMedia() {
           srcSet="https://swiperjs.com/demos/images/nature-3.jpg"
         />
         <source
-          media={`(min-width: ${VIEWPORT.SM})`}
+          media={`(min-width: ${VIEWPORT.S})`}
           srcSet="https://swiperjs.com/demos/images/nature-2.jpg"
         />
         <img
