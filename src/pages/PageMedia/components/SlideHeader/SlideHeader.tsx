@@ -3,6 +3,7 @@ import styles from "./SlideHeader.module.css";
 
 // TODO:
 // Replace the alt
+// replace the title
 // Add props
 
 export default function SlideHeader() {

@@ -9,6 +9,7 @@ import "swiper/css/effect-fade";
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 import styles from "./CarouselHeader.module.css";
+import SlideHeader from "../SlideHeader/SlideHeader";
 
 export default function CarouselHeader() {
   return (
@@ -24,16 +25,19 @@ export default function CarouselHeader() {
         className={styles.carousel}
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <SlideHeader />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <SlideHeader />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <SlideHeader />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <SlideHeader />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SlideHeader />
         </SwiperSlide>
       </Swiper>
     </>
