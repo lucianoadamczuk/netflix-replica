@@ -1,5 +1,8 @@
 export const VIEWPORT = {
-  SM: "500px",
-  L: "1024px",
-  XL: "1500px",
+  XS: 0,
+  S: 340,
+  M: 640,
+  L: 768,
+  XL: 1024,
+  XXL: 1500,
 };

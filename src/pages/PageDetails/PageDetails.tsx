@@ -1,4 +1,4 @@
-import { Header, MainDetails, Seasons, Trailers } from "./sections";
+import { Header, MainDetails, Related, Seasons, Trailers } from "./sections";
 
 export default function PageDetails() {
   return (
@@ -8,6 +8,7 @@ export default function PageDetails() {
         <MainDetails />
         <Trailers />
         <Seasons />
+        <Related />
       </main>
     </>
   );
