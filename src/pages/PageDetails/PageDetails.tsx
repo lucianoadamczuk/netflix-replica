@@ -1,4 +1,4 @@
-import { Header, MainDetails } from "./sections";
+import { Header, MainDetails, Trailers } from "./sections";
 
 export default function PageDetails() {
   return (
@@ -6,6 +6,7 @@ export default function PageDetails() {
       <Header />
       <main>
         <MainDetails />
+        <Trailers />
       </main>
     </>
   );

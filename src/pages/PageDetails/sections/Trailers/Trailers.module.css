@@ -1,0 +1,28 @@
+.container {
+  margin: var(--space-normal) 0;
+  padding: 0 var(--container);
+}
+
+.trailersContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-small);
+}
+
+.trailer {
+  width: 100%;
+  height: 150px;
+  background-color: red;
+  border-radius: var(--rounded-small);
+  transition-duration: 0.2s;
+}
+
+.trailer:hover {
+  transform: scale(98%);
+}
+
+@media (width > 360px) {
+  .trailersContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
