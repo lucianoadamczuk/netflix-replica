@@ -1,0 +1,25 @@
+.slide {
+  width: 100%;
+  height: 130px;
+  padding: var(--space-small);
+  display: flex;
+  align-items: end;
+  background-color: red;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  mask-image: linear-gradient(to bottom, var(--color-dark) 55%, transparent);
+}
+
+.title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
