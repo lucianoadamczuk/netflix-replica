@@ -1,0 +1,18 @@
+:root {
+  --color-dark: rgb(35, 31, 31);
+  --color-dark-transparent: rgba(35, 31, 31, 0.6);
+
+  --color-muted: rgb(89, 89, 89);
+  --color-muted-transparent: rgb(89, 89, 89, 0.6);
+
+  --color-light: rgb(242, 242, 242);
+  --color-light-soft: rgb(178, 178, 178);
+  --color-light-transparent: rgba(242, 242, 242, 0.6);
+
+  --color-primary: rgb(229, 9, 20);
+}
+
+html {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
