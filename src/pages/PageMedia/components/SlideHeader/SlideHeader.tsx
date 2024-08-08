@@ -1,5 +1,6 @@
 import { Button } from "../../../../components";
 import { VIEWPORT } from "../../../../constants";
+import { ButtonsLayout } from "../../../../layouts";
 import styles from "./SlideHeader.module.css";
 
 // TODO:
@@ -42,8 +43,10 @@ export default function SlideHeader() {
           alias tenetur dolorem ratione molestiae.
         </p>
 
-        <Button text="Play" />
-        <Button secondary text="More Information" />
+        <ButtonsLayout>
+          <Button text="Play" />
+          <Button secondary text="More Information" />
+        </ButtonsLayout>
       </div>
     </article>
   );
