@@ -1,4 +1,4 @@
-import { PageMedia } from "./pages";
+import PageMedia from "./pages/PageMedia/PageMedia";
 
 function App() {
   return (

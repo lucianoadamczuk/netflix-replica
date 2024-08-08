@@ -1,22 +1,24 @@
+import { VIEWPORT } from "../../../../constants";
 import styles from "./SlideHeader.module.css";
 
 // TODO:
 // Replace the alt
+// Add props
 
 export default function SlideHeader() {
   return (
     <article className={styles.slide}>
       <picture className={styles.image}>
         <source
-          media="(min-width: )"
+          media={`(min-width: ${VIEWPORT.XL})`}
           srcSet="https://swiperjs.com/demos/images/nature-4.jpg"
         />
         <source
-          media="(min-width: )"
+          media={`(min-width: ${VIEWPORT.L})`}
           srcSet="https://swiperjs.com/demos/images/nature-3.jpg"
         />
         <source
-          media="(min-width: )"
+          media={`(min-width: ${VIEWPORT.SM})`}
           srcSet="https://swiperjs.com/demos/images/nature-2.jpg"
         />
         <img
