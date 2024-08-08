@@ -3,6 +3,8 @@ import { CarouselResponsive } from "../../components";
 import { CarouselHeader } from "./components";
 import styles from "./PageMedia.module.css";
 import SlideMedia from "../../components/SlideMedia/SlideMedia";
+import { v4 as uuidv4 } from "uuid";
+
 export default function PageMedia() {
   const loadingSlides = 10;
   return (
@@ -13,7 +15,7 @@ export default function PageMedia() {
       <main className={styles.main}>
         <CarouselResponsive XS={1.2} S={2.2} M={3.2} L={4.2} XL={5.2} XXL={6.2}>
           {Array.from({ length: loadingSlides }).map(() => (
-            <SwiperSlide>
+            <SwiperSlide key={uuidv4()}>
               <SlideMedia />
             </SwiperSlide>
           ))}
