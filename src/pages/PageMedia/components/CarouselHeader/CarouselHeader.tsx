@@ -1,5 +1,5 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -8,10 +8,14 @@ import "swiper/css/effect-fade";
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
+import { ReactNode } from "react";
 import styles from "./CarouselHeader.module.css";
-import SlideHeader from "../SlideHeader/SlideHeader";
 
-export default function CarouselHeader() {
+interface Props {
+  children: ReactNode;
+}
+
+export default function CarouselHeader({ children }: Props) {
   return (
     <>
       <Swiper
@@ -24,21 +28,7 @@ export default function CarouselHeader() {
         modules={[EffectFade, Navigation, Pagination]}
         className={styles.carousel}
       >
-        <SwiperSlide>
-          <SlideHeader />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SlideHeader />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SlideHeader />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SlideHeader />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SlideHeader />
-        </SwiperSlide>
+        {children}
       </Swiper>
     </>
   );

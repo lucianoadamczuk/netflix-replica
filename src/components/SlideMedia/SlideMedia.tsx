@@ -7,7 +7,7 @@ import styles from "./SlideMedia.module.css";
 
 interface Props {
   loading: boolean;
-  title: string;
+  title?: string;
 }
 
 /**
