@@ -1,5 +1,11 @@
+import { PageMedia } from "./pages";
+
 function App() {
-	return <></>;
+  return (
+    <>
+      <PageMedia />
+    </>
+  );
 }
 
 export default App;

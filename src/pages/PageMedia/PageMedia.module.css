@@ -1,0 +1,8 @@
+.header {
+  height: 85vh;
+}
+
+.main {
+  margin: var(--space-big) 0;
+  padding: var(--container);
+}
