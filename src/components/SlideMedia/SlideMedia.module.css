@@ -2,6 +2,7 @@
   height: 130px;
   padding: var(--space-small);
   display: flex;
+  justify-content: center;
   align-items: end;
   overflow: hidden;
   cursor: pointer;
