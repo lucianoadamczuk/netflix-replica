@@ -5,6 +5,7 @@ import { Swiper } from "swiper/react";
 import { ReactNode } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
+import { VIEWPORT } from "../../constants";
 
 interface Props {
   XS: number;
@@ -16,20 +17,20 @@ interface Props {
   children: ReactNode;
 }
 
-const small;
-
 /**
  * @description
  * Carousel to display data.
+ * You can map an array as a children and, for each element, create a SwiperSlide with a slide inside.
  *
  * @param {Props} props - Props component
- * @param {number} props.XS - Size for XS pixeles devices
- * @param {number} props.S - Size for M pixeles devices
- * @param {number} props.M - Size for L pixeles devices
- * @param {number} props.L - Size for XL pixeles devices
- * @param {number} props.XL - Size for  pixeles devices
- *  @param {number} props.XXL - Size for  pixeles devices
- * @returns
+ * @param {ReactNode} props.children - A SwiperSlide component is required to make the carousel works
+ * @param {number} props.XS - Size for {VIEWPORT.XS} pixeles devices
+ * @param {number} props.S - Size for {VIEWPORT.S} pixeles devices
+ * @param {number} props.M - Size for {VIEWPORT.M} pixeles devices
+ * @param {number} props.L - Size for {VIEWPORT.L} pixeles devices
+ * @param {number} props.XL - Size for {VIEWPORT.XL} pixeles devices
+ * @param {number} props.XXL - Size for {VIEWPORT.XXL} pixeles devices
+ * @returns {ReactNode}
  */
 
 export default function CarouselResponsive({
@@ -40,7 +41,7 @@ export default function CarouselResponsive({
   XL,
   XXL,
   children,
-}: Props) {
+}: Props): ReactNode {
   return (
     <section>
       <Swiper
@@ -50,19 +51,19 @@ export default function CarouselResponsive({
           clickable: true,
         }}
         breakpoints={{
-          340: {
+          [VIEWPORT.S]: {
             slidesPerView: S,
           },
-          640: {
+          [VIEWPORT.M]: {
             slidesPerView: M,
           },
-          768: {
+          [VIEWPORT.L]: {
             slidesPerView: L,
           },
-          1024: {
+          [VIEWPORT.XL]: {
             slidesPerView: XL,
           },
-          1400: {
+          [VIEWPORT.XXL]: {
             slidesPerView: XXL,
           },
         }}
