@@ -42,8 +42,8 @@ export default function SlideHeader() {
           alias tenetur dolorem ratione molestiae.
         </p>
 
-        <Button />
-        <Button secondary />
+        <Button text="Play" />
+        <Button secondary text="More Information" />
       </div>
     </article>
   );
