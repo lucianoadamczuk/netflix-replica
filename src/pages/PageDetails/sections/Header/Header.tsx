@@ -1,5 +1,13 @@
 import { VIEWPORT } from "../../../../constants";
 import styles from "./Header.module.css";
+
+// TODO
+// add props
+// replace title
+// replace images
+// replace content
+// add styles for content
+
 export default function Header() {
   return (
     <header className={styles.header}>

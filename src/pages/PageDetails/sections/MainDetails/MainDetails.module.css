@@ -1,0 +1,24 @@
+.container {
+  padding: 0 var(--container);
+}
+
+.text {
+  color: var(--color-muted);
+}
+
+.secondaryDetailsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-small);
+}
+
+.li {
+  color: var(--color-muted);
+  list-style: none;
+}
+
+@media (width > 300px) {
+  .secondaryDetailsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
