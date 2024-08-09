@@ -6,7 +6,7 @@ import styles from "./SlideMedia.module.css";
 // add images URLs
 
 interface Props {
-  loading: boolean;
+  loading?: boolean;
   title?: string;
 }
 
