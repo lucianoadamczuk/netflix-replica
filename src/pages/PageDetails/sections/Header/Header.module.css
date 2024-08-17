@@ -1,0 +1,46 @@
+.header {
+	height: 90vh;
+	padding: var(--space-normal) var(--container);
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.header > div {
+	display: flex;
+	gap: var(--space-big);
+}
+
+.header > p {
+	margin-bottom: var(--space-big);
+	font-style: italic;
+	color: var(--color-light-soft);
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	inset: 0;
+	object-fit: cover;
+	object-position: top;
+	mask-image: linear-gradient(to bottom, var(--color-dark), transparent);
+}
+
+.good {
+	color: var(--color-success);
+}
+
+.average {
+	color: var(--color-warning);
+}
+
+.bad {
+	color: var(--color-danger);
+}
+
+@media (width > 724px) {
+	.header > h3 {
+		width: 60%;
+	}
+}

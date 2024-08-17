@@ -1,0 +1,8 @@
+.carousel {
+	height: 90vh;
+}
+
+.carousel > .swiper-wrapper > .swiper-slide {
+	width: 100%;
+	height: 100%;
+}

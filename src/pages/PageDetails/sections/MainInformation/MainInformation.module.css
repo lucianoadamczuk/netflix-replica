@@ -1,0 +1,52 @@
+.mainInformation {
+	display: grid;
+	gap: var(--space-small);
+}
+
+.description > p {
+	color: var(--color-muted);
+}
+
+@media (width > 300px) {
+	.mainInformation {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			'description description'
+			'genres companies'
+			'languages languages';
+	}
+
+	.description {
+		grid-area: description;
+	}
+
+	.companies {
+		grid-area: companies;
+	}
+
+	.genres {
+		grid-area: genres;
+	}
+
+	.languages {
+		grid-area: languages;
+	}
+}
+
+@media (width > 600px) {
+	.mainInformation {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			'description description description '
+			' genres companies  languages';
+	}
+}
+
+@media (width > 1024px) {
+	.mainInformation {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'description description genres languages'
+			'description description companies companies';
+	}
+}

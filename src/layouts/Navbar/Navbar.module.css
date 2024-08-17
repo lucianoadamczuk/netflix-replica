@@ -1,0 +1,69 @@
+.navbar {
+	width: 100%;
+	padding: var(--space-normal) var(--container);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	z-index: 9999999;
+	background: linear-gradient(to top, transparent, var(--color-dark));
+	transition: 0.2s;
+}
+
+.logo {
+	width: 80px;
+	height: 100%;
+}
+
+.fullColor {
+	background-color: var(--color-dark);
+}
+
+.menu > svg {
+	width: 25px;
+	height: 25px;
+}
+
+.linksContainer {
+	width: 100%;
+	height: 40vh;
+	position: absolute;
+	right: -100%;
+	top: 55px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-normal);
+	background-color: var(--color-dark);
+	transition: 0.5s ease;
+}
+
+.linksContainer > input {
+	padding: var(--space-small);
+	background-color: var(--color-muted);
+	border: 0px;
+	color: var(--color-light);
+	outline: none;
+}
+
+.isOpen {
+	right: 0;
+}
+
+@media (width > 500px) {
+	.menu {
+		display: none;
+	}
+
+	.linksContainer {
+		height: fit-content;
+		position: relative;
+		top: auto;
+		right: auto;
+		flex-direction: row;
+		justify-content: end;
+		background-color: transparent;
+	}
+}

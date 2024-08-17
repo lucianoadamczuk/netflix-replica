@@ -1,0 +1,15 @@
+:root {
+	--container: 5%;
+}
+
+@media (width > 1300px) {
+	:root {
+		--container: 10%;
+	}
+}
+
+@media (width > 1600px) {
+	:root {
+		--container: 20%;
+	}
+}

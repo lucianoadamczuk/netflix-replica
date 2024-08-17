@@ -1,0 +1,8 @@
+.container {
+	display: grid;
+}
+
+.container > ul {
+	list-style-type: none;
+	color: var(--color-muted);
+}

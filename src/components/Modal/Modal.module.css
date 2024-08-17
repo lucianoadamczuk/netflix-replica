@@ -1,0 +1,37 @@
+.modal {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	inset: 0;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--space-small);
+	background-color: var(--color-dark-transparent);
+	backdrop-filter: blur(10px);
+	animation: open 0.5s ease forwards;
+	opacity: 0;
+	z-index: 9999999999999999;
+}
+
+.modal > svg {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 50px;
+	right: 25px;
+	color: var(--color-dark);
+	background-color: var(--color-light-soft);
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+@keyframes open {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
